@@ -57,7 +57,8 @@
         "stage": "npm run dist && node tasks/stage.js",
         "stage_latest": "npm run dist && node tasks/stage.js latest",
         "stage_dev": "npm run dist && node tasks/stage.js dev",
-        "prepublishOnly": "npm run dist"
+        "prepublishOnly": "npm run dist",
+        "release": "npx changelogen@latest --release && npm publish --access public"
     },
     "contributors": [
         {
